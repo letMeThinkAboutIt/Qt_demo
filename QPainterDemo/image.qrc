@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/desktop">
+        <file alias="20230616">../resource/image/desktop20230616.png</file>
+    </qresource>
+</RCC>
