@@ -1,0 +1,24 @@
+所有QML可视对象的祖宗对象都是ITEM，Item的默认属性是Data，Data可以理解为一个List
+	所有的子属性，如果是可是对象，会放入CHILDREN
+	如果不是，会放入RESOURCE
+	
+
+
+默认属性
+	如果有默认属性，那么生成对象时，对应类型的属性会变为默认属性，而不是子对象。
+	
+	
+属性的绑定
+	如果对象a.p = b.b1 + b.b2 ,那么a.p就依赖b，就和b绑定了
+	
+	绑定类型：
+	delayed 延迟评估 b.b1 b.b2改变，不会立即改变a.p，直到访问a.p才重新评估
+	
+	when bool true为绑定成功
+	
+	Binding {
+		target: rect1
+		property: "name"
+		value: 绑定的表达式
+		
+	}
